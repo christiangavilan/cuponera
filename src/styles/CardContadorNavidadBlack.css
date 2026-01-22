@@ -1,0 +1,320 @@
+
+.ContadorNavidadBlack_contenedorPadre{
+    position: relative;
+    @media(max-width: 768px){
+        text-align: center;
+    }
+    & .urlContador{
+        text-decoration: none;
+        color: inherit;
+        & .ContadorNavidadBlack_contenedorCupon {
+            background: #000000;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(48, 52, 66, 1) 100%);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 100%;
+            color: unset;
+            border: 1px solid #E8E8E8;
+            border-radius: 5px;
+            padding-bottom: 15px;
+            &:hover{
+                background-color: #00000018 ;
+                z-index: 99;
+                transition: background 0.2s;
+            
+            }
+            @media(max-width: 768px){
+                display: inline-block;
+                position: relative;
+                
+            }
+            & .ContadorNavidadBlack_contenedorAdornoUno{
+                padding-left: 15px;
+                @media(max-width: 768px){
+                    transform: rotate(90deg);
+                    padding: 0;
+                    position: absolute;
+                    top: -14px;
+                
+                }
+            }
+            & .ContadorNavidadBlack_contenedorImage{
+                width: 230px;
+                height: 230px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                @media(max-width: 768px){
+                    margin: 0 auto;
+                    height: 220px;
+                    padding-top: 50px;
+                }
+                    & .ContadorNavidadBlack_img {
+                    height: 200px;
+                    max-width: 100%;
+                }
+            }
+            
+            & .ContadorNavidadBlack_info {
+                padding: 20px 20px 0 10px;
+                max-width: 100%;
+                width: 250px;
+                display: flex;
+                /* flex-direction: column; */
+                justify-content: start;
+                max-height: 100%;
+                @media(max-width: 768px){
+                    padding: 0;
+                    margin: 30px 15px 0 15px;
+                    
+                }
+                & .ContadorNavidadBlack_contenedorAdorno{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-right: 10px;
+                    & .ContadorNavidadBlack_adornoDcto_line{
+                        height: 40%;
+                        width: 1px;
+                        background-color: #ffffff;
+                    }
+
+                }
+                & .ContadorNavidadBlack_innerInfo{
+                    height: 100%;
+                    @media(max-width: 768px){
+                        text-align: left;
+                    }
+                    & .ContadorNavidadBlack_contendorCupon{
+                        text-align: left;
+                        color: #ffffff;
+                        @media(max-width: 768px){
+                            
+                        }
+                        & .ContadorNavidadBlack_texto{
+                            text-transform: uppercase;
+                            font-size: 12px;
+                            margin: 0;
+                            display: inline-block;
+                        }
+                        & .ContadorNavidadBlack_descripcion{
+                            font-size: 20px;
+                            line-height: 23px;
+                            margin: 0;
+                        }  
+                        & .ContadorNavidadBlack_subDescripcion{
+                            font-size: 12px;
+                            margin: 0;
+                        }  
+                            
+                    }
+                    
+                }
+                & .ContadorNavidadBlack_contendorllamado{
+                    display: inline-block;
+                    margin: 10px 0;
+                    text-decoration: none;
+                    @media(max-width: 768px){
+                        height: 130px;
+                    }
+
+                    /* PRECIO OU */
+                    & .contenedorRelativoPrecio{
+                        display: flex;
+                        /* height: 60px; */
+                        width: 200px;
+                        & .ContadorNavidadBlack_imageOU{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            padding-right: 10px;
+                            & .ContadorNavidadBlack_imageOUline{
+                                height: 35px;
+                                width: 1px;
+                                background-color: #ffffff;
+                            }
+                            & .imgOU_precio{
+                                max-width: 100%;
+                                padding: 5px 0;
+                                width: 40px;
+                            }
+                        }
+                        & .ContadorNavidadBlack_contenedorNumerosPrecio{
+                            font-size: 14px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: start;
+                            z-index: 2;
+                            height: 60px;
+                            color: #ffffff;
+                            & .imgOU_precio{
+                                width: 50px;
+                            }
+                            & .ContadorNavidadBlack_precioOferta{
+                                font-size: 2em;
+                                line-height: 1em;
+                                font-weight: 600;
+                                margin: 0;
+                            }
+                            & .Contador_precioOU{
+                                background-color: #FE0000;
+                            }
+                            & .ContadorNavidadBlack_precioOU{
+                                
+                            }
+                            & .ContadorNavidadBlack_contenedor2xPrecio{
+                                display: flex;
+                                gap: 10px;
+                                & .ContadorNavidadBlack_texto2x{
+                                    font-size: 2em;
+                                    line-height: 1em;
+                                    font-weight: bold;
+                                    margin: 0;
+                                }
+                                & .ContadorNavidadBlack_precio2x{
+                                    font-size: 2em;
+                                    line-height: 1em;
+                                    font-weight: bold;
+                                    margin: 0;
+                                    color: #E9234D; 
+                                }
+                            }
+                            & .ContadorNavidadBlack_TextoprecioOferta{
+                                font-size: .8em;
+                                font-weight: 400;
+                                text-align: left;
+                                margin: 0;
+
+                            }
+                        }
+                        
+                    }
+
+                    /* DESUENTO */
+                    & .contenedorRelativo{
+                        position: relative;
+                        height: 60px;
+                        width: 180px;
+                        color: #00FF01;
+                        & .ContadorNavidadBlack_contenedorNumeros{
+                            font-size: 12px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: start;
+                            position: absolute;
+                            z-index: 2;
+                            height: 60px;
+                            & .imgOU{
+                                width: 25px;
+                                max-width: 100%;
+                            }
+                            & .ContadorNavidadBlack_porcentaje{
+                                font-size: 6em;
+                                letter-spacing: -5px;
+                                font-weight: bold;
+                                margin: 0;
+                                
+                                }
+                            & .ContadorNavidadBlack_innerContenedor{
+                                margin-left: 5px;
+                                margin-top: 10px;
+                                text-align: left;
+                                & .ContadorNavidadBlack_textPorcentaje{
+                                    font-size: 3.5em;
+                                    line-height: .6em;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin: 0;
+                                    
+                                }
+                                & .ContadorNavidadBlack_adicional{
+                                    font-size: 1.5em;
+                                    letter-spacing: 1px;
+                                    font-weight: bold;
+                                    margin: 0;
+                                    
+                                }
+                            }
+                        }
+                        
+                    }
+                    & .ContadorNavidadBlack_pSeleccionados{
+                        font-size: .8em;
+                        margin: 10px 0 0 0;
+                        text-align: center;
+                        color: #ffffff;
+                    }
+                    & .ContadorNavidadBlack_verProductos{
+                        font-size: 12px;
+                        text-decoration: underline;
+                        margin: 0;
+                    }
+                }
+                
+                    
+            }
+            & .ContadorNavidadBlack_contenedorLegal{
+                position: relative;
+                padding: 0 5px;
+                @media(max-width: 768px){
+                    position: initial;
+                }
+                & .ContadorNavidadBlack_textoLegal{
+                    display: inline-block;
+                    font-size: 9px;
+                    text-align: center;
+                    line-height: 12px;
+                    margin: 0;
+                    @media(max-width: 768px){
+                        position: initial;
+                        transform: none;
+                        left: 0;
+                        top: 0;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+        
+}
+    
+    & .panel.panel--open {
+        display: block;
+    }
+    & .ContadorNavidadBlack_editorCupon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0px;
+        z-index: 100;
+        gap: 10px;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        opacity: 0;
+        background-color: #5b5b5b4c;
+        display: none;
+        &:hover{
+            opacity: 1;
+            pointer-events: auto;
+        }
+        & .ContadorNavidadBlack_btnEditor{
+            background-color: white;
+            color: black;
+            border-radius: 100%;
+            font-size: 22px;
+            padding: 20px 22px;
+            cursor: pointer;
+            
+            &:hover{
+                background-color: black;
+                color: white;
+            }
+        }
+    }
